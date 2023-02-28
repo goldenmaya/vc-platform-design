@@ -1,0 +1,32 @@
+<% var path = '../'; %>
+
+<!--Login form-->
+<form class="login-form">
+  <div class="login-form__inputs">
+    <%- include(`${path}partials/_input`, { type: 'text', placeholder: 'Enter username', label: 'Username' }); %>
+    <%- include(`${path}partials/_input`, { type: 'password', placeholder: 'Pa$$word', label: 'Password' }); %>
+
+    <div class="login-form__flex">
+      <%- include(`${path}partials/_checkbox`, { label: 'Remember me' }); %>
+
+      <a class="vc-link" href="#" target="_blank">Forgot your password?</a>
+    </div>
+  </div>
+
+  
+  <% if (typeof status != 'undefined' && status == 'error') { %>
+    <div class="login-form__alerts">
+      <%- include(`${path}partials/_alert`, { status: 'error', text: 'Authentical error (code: 400)' }); %>
+    </div>
+  <% } %>
+
+  <% if (typeof status != 'undefined' && status == 'warning') { %>
+    <div class="login-form__alerts">
+      <%- include(`${path}partials/_alert`, { status: 'warning', text: 'You have Capslock enabled' }); %>
+    </div>
+  <% } %>
+
+  <div class="login-form__buttons">
+    <button class="vc-button login-form__button">Sign in</button>
+  </div>
+</form>

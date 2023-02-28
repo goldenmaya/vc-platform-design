@@ -1,0 +1,17 @@
+<div class="vc-alert vc-alert--<%=status-%>">
+  <% if (status == 'error') { %>
+    <!-- Error icon -->
+    <svg class="vc-alert__icon">
+      <use href="/images/error.svg#icon"></use>
+    </svg>
+  <% } %>
+
+  <% if (status == 'warning') { %>
+    <!-- Warning icon -->
+    <svg class="vc-alert__icon">
+      <use href="/images/warning.svg#icon"></use>
+    </svg>
+  <% } %>
+
+  <div class="vc-alert__text"><%= text %></div>
+</div>

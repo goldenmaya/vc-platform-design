@@ -1,0 +1,1 @@
+if(null!==document.querySelector(".top-swiper")){const a=new Swiper(".top-swiper",{autoplay:{delay:3e3,disableOnInteraction:!1},loop:!0,speed:700,slidesPerView:1,centeredSlides:!0,grabCursor:!0})}

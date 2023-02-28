@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-------------------------------------------------------->
+    <% var path = './'; %>
+    <!-------------------------------------------------------->
+    <% const pageMeta = { title: 'Form Warning', description: '', url: '', }; %>
+    <!-------------------------------------------------------->
+    <%- include(`${path}partials/_head`, { meta: pageMeta }); %>
+  </head>
+
+  <body>
+    <div class="auth" style="background-image: url('/images/bg-1.webp')">
+      <div class="auth__container">
+        <div class="auth__head">
+          <img class="auth__logo" src="/images/logo.svg" alt="" />
+          <h1 class="auth__title">Sign in to Virto Commerce Manager</h1>
+        </div>
+
+        <div class="auth__content">
+          <%- include(`${path}partials/_login-form`, { status: 'warning' }); %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

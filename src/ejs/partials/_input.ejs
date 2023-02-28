@@ -1,0 +1,28 @@
+<!-- Input -->
+<div class="vc-input 
+            <% if (type == 'password') { %>vc-input--password<% } %>
+            <% if (typeof error != 'undefined') { %> vc-input--error <% } %>">
+  <label class="vc-input__label"> <%= label %> <span class="vc-input__asterisk">*</span> </label>
+  <div class="vc-input__container">
+    <input class="vc-input__field" type="<%= type %>" placeholder="<%= placeholder %>" />
+
+    <!-- Password switcher -->
+    <% if (type == 'password') { %>
+      <button class="vc-input__password-switcher">
+        <!-- Password visible: false -->
+        <svg class="vc-input__icon">
+          <use href="/images/eye.svg#icon"></use>
+        </svg>
+
+        <!-- Password visible: true -->
+        <svg class="vc-input__icon" style="display: none;">
+          <use href="/images/eye.svg#icon"></use>
+        </svg>
+      </button>
+    <% } %>
+  </div>
+
+  <% if (typeof message != 'undefined') { %>
+    <div class="vc-input__message"><%= message %></div>
+  <% } %>
+</div>

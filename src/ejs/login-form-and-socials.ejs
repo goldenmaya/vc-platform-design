@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-------------------------------------------------------->
+    <% var path = './'; %>
+    <!-------------------------------------------------------->
+    <% const pageMeta = { title: 'Form and social buttons', description: '', url: '', }; %>
+    <!-------------------------------------------------------->
+    <%- include(`${path}partials/_head`, { meta: pageMeta }); %>
+  </head>
+
+  <body>
+    <div class="auth" style="background-image: url('/images/bg-1.webp')">
+      <!-------------- auth__container--wide -------------->
+      <div class="auth__container auth__container--wide">
+        <div class="auth__head">
+          <img class="auth__logo" src="/images/logo.svg" alt="" />
+          <h1 class="auth__title">Sign in to Virto Commerce Manager</h1>
+        </div>
+
+        <div class="auth__content">
+          <%- include(`${path}partials/_login-form`); %>
+
+          <%- include(`${path}partials/_divider`); %>
+
+          <div class="socials">
+            <%- include(`${path}partials/_button-social`, { image: 'azure.webp', text: 'Sign in with Microsoft' }); %>
+            <%- include(`${path}partials/_button-social`, { image: 'microsoft.webp', text: 'Sign in with Active Directory' }); %>
+            <%- include(`${path}partials/_button-social`, { image: 'facebook.webp', text: 'Sign in with Facebook' }); %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
