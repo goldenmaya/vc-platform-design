@@ -194,6 +194,8 @@ ol
     word-wrap: break-word
     // web-kit only
     word-break: break-word
+  .list-descr-white-space
+    white-space: pre-wrap
   .alert
     color: $genericErrorColor
   .list-link
@@ -506,10 +508,10 @@ h3
   vertical-align: middle
 
 /* UI Grid */
-@import "modules/_ui-grid.sass"
+@import "_ui-grid.sass"
 
 /* Forms */
-@import "modules/_forms.sass"
+@import "_forms.sass"
 
 /* Tiles */
 .tile-group
@@ -787,7 +789,7 @@ $names: "", ".double", ".triple", ".quadro"
 .__items .list-item:after
   display: none
 .__items .list-item.__more:before
-  background: url('/images/navbar/more.svg') no-repeat
+  background: url('../../../../images/navbar/more.svg') no-repeat
   color: $colorText
   float: left
   font-family: $fontAw
@@ -1467,7 +1469,7 @@ $names: "", ".double", ".triple", ".quadro"
   padding: 6px 30px 6px 5px
   z-index: 49
   &.btn-default
-    background: $baseColor url('/images/layout/plus.svg') no-repeat right center
+    background: $baseColor url('../../../../images/layout/plus.svg') no-repeat right center
     background-size: 10px
     background-position-x: 35px
     border-radius: 2px
@@ -1903,7 +1905,7 @@ tags-input
           width: 47%
           margin-right: 16px
       .form-input .btn
-        background: url(/images/layout/remove.svg) no-repeat content-box center
+        background: url(../../../../images/layout/remove.svg) no-repeat content-box center
         min-width: 34px
       .filter-edit
         font-size: 17px
@@ -2068,7 +2070,7 @@ tags-input
   > ul
     height: 100%
   > .list.__editing
-    background: url(/images/grid.png) repeat scroll 0 0
+    background: url(../../../../images/grid.png) repeat scroll 0 0
   gridster-item,
   .list-item
     background: $lightBg
