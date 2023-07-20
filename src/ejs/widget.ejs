@@ -4,14 +4,14 @@
         <!-------------------------------------------------------->
         <% var path = './'; %>
         <!-------------------------------------------------------->
-        <% const pageMeta = { title: 'Social buttons', description: '', url: '', }; %>
+        <% const pageMeta = { title: 'vc-gridster', description: '', url: '', }; %>
         <!-------------------------------------------------------->
         <%- include(`${path}partials/_head`, { meta: pageMeta }); %>
     </head>
 
     <body>
-        <div class="cnt-inner" style="position: relative;">
-            <div class="dashboard" ng-if="$state.current.name === 'workspace'">
+        <div class="cnt-inner">
+            <div class="dashboard">
                 <div class="dashboard-area">
                     <div class="dashboard-inner">
                         <div class="vc-gridster">
