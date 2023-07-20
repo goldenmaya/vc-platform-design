@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-------------------------------------------------------->
+        <% var path = './'; %>
+        <!-------------------------------------------------------->
+        <% const pageMeta = { title: 'Social buttons', description: '', url: '', }; %>
+        <!-------------------------------------------------------->
+        <%- include(`${path}partials/_head`, { meta: pageMeta }); %>
+    </head>
+
+    <body>
+        <div class="cnt-inner" style="position: relative;">
+            <div class="dashboard" ng-if="$state.current.name === 'workspace'">
+                <div class="dashboard-area">
+                    <div class="dashboard-inner">
+                        <div class="vc-gridster">
+                            <img class="vc-gridster__img" src="images/order-statistic.svg" alt="">
+                            <div class="vc-gridster__info">
+                                <div class="vc-gridster__title">Order statistic</div>
+                                <div class="vc-gridster__description">
+                                    You do not currently have access to this feature. Please <a href="#">contact your account administrator</a> for access.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

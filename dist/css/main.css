@@ -5280,7 +5280,7 @@ tags-input .tags.focused {
 .gridster .list-item {
   background: #fbfdfe;
   box-sizing: border-box;
-  box-shadow: 0 0 0 2px #dee9f0 inset;
+  box-shadow: 0 0 0 1px #dee9f0 inset;
   padding: 2px;
   position: absolute;
   text-align: center;
@@ -5291,22 +5291,22 @@ tags-input .tags.focused {
 }
 .gridster .list-item.error {
   background: #f2dede;
-  box-shadow: 0 0 0 2px #ebccd1 inset;
+  box-shadow: 0 0 0 1px #ebccd1 inset;
   color: #e0a9a9;
 }
 .gridster .list-item.success {
   background: #dff0d8;
-  box-shadow: 0 0 0 2px #d6e9c6 inset;
+  box-shadow: 0 0 0 1px #d6e9c6 inset;
   color: #b2e0a9;
 }
 .gridster .list-item.warning {
   background: #fcf8e3;
-  box-shadow: 0 0 0 2px #faebcc inset;
+  box-shadow: 0 0 0 1px #faebcc inset;
   color: #e0d8a9;
 }
 .gridster .list-item.info {
   background: #d9edf7;
-  box-shadow: 0 0 0 2px #bce8f1 inset;
+  box-shadow: 0 0 0 1px #bce8f1 inset;
   color: #a9d1e0;
 }
 .gridster .gridster-item-moving {
@@ -5958,23 +5958,23 @@ tags-input .tags.focused {
   overflow: auto;
 }
 .dashboard .dashboard-inner {
-  height: calc(100% - 22px);
-  padding: 22px 90px 0;
+  height: calc(100% - 40px);
+  padding: 40px 90px 0;
   position: relative;
 }
 .dashboard .dashboard-inner .gridster-loaded {
   width: 770px;
 }
 .dashboard .dashboard-title {
-  position: absolute;
-  top: 30px;
-  font-weight: 300;
-  left: 90px;
-  text-shadow: 1px 2px rgba(255, 255, 255, 0.5), 2px -2px rgba(255, 255, 255, 0.5), -2px 2px rgba(255, 255, 255, 0.5), -2px -2px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 90px 0;
 }
-.dashboard .dashboard-title h1,
-.dashboard .dashboard-title .__logo {
-  display: inline;
+.dashboard .dashboard-title h1 {
+  margin: 0;
+  font-size: 41px;
+  font-weight: 300;
 }
 .dashboard .dashboard-title .__logo {
   max-height: 53px;
@@ -7904,6 +7904,32 @@ body .blade .blade-wrapper .blade-container .bc.blade-static .form-group .form-c
   left: 0;
   right: 0;
   transform: none;
+}
+
+.vc-gridster {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 30px;
+  min-height: 134px;
+  border: 1px solid #E0E8EF;
+  background: #fff;
+}
+.vc-gridster__img {
+  width: 58px;
+  height: 58px;
+}
+.vc-gridster__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.vc-gridster__description {
+  font-size: 13px;
+}
+.vc-gridster__description a {
+  font-size: inherit;
 }
 
 .vc-alert {
