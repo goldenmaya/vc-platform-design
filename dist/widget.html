@@ -18,11 +18,21 @@
 			<div class="dashboard">
 				<div class="dashboard-area">
 					<div class="dashboard-inner">
-						<div class="vc-gridster">
-							<img class="vc-gridster__img" src="images/order-statistic.svg" alt="">
-							<div class="vc-gridster__info">
-								<div class="vc-gridster__title">Order statistic</div>
-								<div class="vc-gridster__description"> You do not currently have access to this feature. Please <a href="#">contact your account administrator</a> for access. </div>
+						<div group="mainDashboard" style="position: relative;">
+							<div gridster="gridsterOpts" class="gridster gridster-desktop gridster-loaded" style="height: 510px;"><!-- ngIf: gridster.movingItem -->
+								<ul class="list">
+									<li class="list-item gridster-item">
+										<div ng-include="widget.template" ng-controller="virtoCommerce.orderModule.dashboard.statisticsWidgetController" ng-model="widget" class="ng-pristine ng-untouched ng-valid">
+											<div class="vc-gridster">
+												<img class="vc-gridster__img" src="images/order-statistic.svg" alt="">
+												<div class="vc-gridster__info">
+													<div class="vc-gridster__title">Order statistic</div>
+													<div class="vc-gridster__description"> You do not currently have access to this feature. Please <a href="#">contact your account administrator</a> for access. </div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>

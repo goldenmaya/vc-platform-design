@@ -7911,10 +7911,9 @@ body .blade .blade-wrapper .blade-container .bc.blade-static .form-group .form-c
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 30px;
+  padding: 24px 30px;
+  text-align: left;
   min-height: 134px;
-  border: 1px solid #E0E8EF;
-  background: #fff;
 }
 .vc-gridster__img {
   width: 58px;
