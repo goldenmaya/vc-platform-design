@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-------------------------------------------------------->
+		<!-------------------------------------------------------->
+		<!-------------------------------------------------------->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<title>vc-gridster</title>
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="cnt-inner">
+			<div class="dashboard">
+				<div class="dashboard-area">
+					<div class="dashboard-inner">
+						<div group="mainDashboard" style="position: relative;">
+							<div gridster="gridsterOpts" class="gridster gridster-desktop gridster-loaded" style="height: 510px;"><!-- ngIf: gridster.movingItem -->
+								<ul class="list">
+									<li class="list-item gridster-item">
+										<div ng-include="widget.template" ng-controller="virtoCommerce.orderModule.dashboard.statisticsWidgetController" ng-model="widget" class="ng-pristine ng-untouched ng-valid">
+											<div class="vc-gridster">
+												<img class="vc-gridster__img" src="images/order-statistic.svg" alt="">
+												<div class="vc-gridster__info">
+													<div class="vc-gridster__title">Order statistic</div>
+													<div class="vc-gridster__description"> You do not currently have access to this feature. Please <a href="#">contact your account administrator</a> for access. </div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

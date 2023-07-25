@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-------------------------------------------------------->
+        <% var path = './'; %>
+        <!-------------------------------------------------------->
+        <% const pageMeta = { title: 'vc-gridster', description: '', url: '', }; %>
+        <!-------------------------------------------------------->
+        <%- include(`${path}partials/_head`, { meta: pageMeta }); %>
+    </head>
+
+    <body>
+        <div class="cnt-inner">
+            <div class="dashboard">
+                <div class="dashboard-area">
+                    <div class="dashboard-inner">
+                        <div group="mainDashboard" style="position: relative;">
+                            <div gridster="gridsterOpts" class="gridster gridster-desktop gridster-loaded" style="height: 510px;"><!-- ngIf: gridster.movingItem -->
+                                <ul class="list">
+                                    <li class="list-item gridster-item">
+                                        <div ng-include="widget.template" ng-controller="virtoCommerce.orderModule.dashboard.statisticsWidgetController" ng-model="widget" class="ng-pristine ng-untouched ng-valid">
+
+                                            <%- include(`${path}partials/_vc-gridster`); %>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
